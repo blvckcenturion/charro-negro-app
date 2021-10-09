@@ -13,7 +13,10 @@ i18n
         resources: {
             en: {
                 translation: {
-                    "title": "Welcome"
+                    "index": {
+                        "about": "About Us",
+                        "articles": "Featured",
+                    }
                 }
             },
             es: {
