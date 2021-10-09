@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('./fonts/Poppins.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+}
+
+@font-face{
+    font-family: "Genz";
+    src: url('./fonts/Genz.otf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+}
