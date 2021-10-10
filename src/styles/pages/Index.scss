@@ -1,0 +1,131 @@
+.index-wrapper{
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+    flex-direction: column;
+
+    .logo-wrapper{
+        width: 50%;
+        height: 30%;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+
+    .links-wrapper{
+        width: 80%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0;
+        border: {
+            top: 1px solid $primary-color;
+            bottom: 1px solid $primary-color;
+        }
+        @include lg{
+            width: 50%;
+        }
+        a{
+            opacity: 0;
+            text-decoration: none;
+            color: $primary-color;
+            font-family: $primary-font;
+            font-size: 1rem;
+            text-align: center;
+            transition: all 1s ease-in-out;
+            &:hover{
+                color: $secondary-color;
+                transform: translateX(50px)
+            }
+            @include md{
+                font-size: 1.5rem;
+            }
+            @include lg{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    
+    .socials-wrapper{
+        width: 80%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0;
+
+        a{
+            font-size: 1.8rem;
+            color: $primary-color;
+            transition: all 1s ease-in-out;
+            &:hover{
+                color: $secondary-color;
+                transform: scale(1.1);
+            }
+            @include md{
+                font-size: 2.5rem;
+            }
+        }
+        @include lg{
+            width: 50%;
+        }
+
+    }
+
+    .language-wrapper{
+        position: absolute;
+        opacity: 0;
+        top: 30px;
+        right: 10px;
+        color: $primary-color;
+        font-family: $primary-font;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100px;
+        font-size: 1rem;
+        .selected{
+            border: 1px solid $primary-color;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        @include md{
+            font-size: 1.5rem;
+            width: 200px;
+        }
+        cursor: pointer;
+
+    }
+
+    .text-overlay{
+        position: absolute;
+        overflow: hidden;
+        h1{
+            text-align: center;
+            font-family: $primary-font;
+            color: $primary-color;
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            @include md{
+                font-size: 3rem;
+            }
+        }
+    }
+}

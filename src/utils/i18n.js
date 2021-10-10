@@ -15,13 +15,18 @@ i18n
                 translation: {
                     "index": {
                         "about": "About Us",
-                        "articles": "Featured",
+                        "articles": "Featured Articles",
+                        "order": "Order Now",
                     }
                 }
             },
             es: {
                 translation: {
-                    "title": "Bien puta"
+                    "index": {
+                        "about": "Sobre Nosotros",
+                        "articles": "Articulos Relacionados",
+                        "order": "Pedir Ahora",
+                    }
                 }
             }
         },
