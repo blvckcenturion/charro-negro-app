@@ -10,3 +10,7 @@ export const SOCIALS = [
         href: 'https://www.facebook.com/charronegrofood/',
     }
 ]
+
+export const LINKS = [
+    '/', '/about', '/menu', '/articles'
+]

@@ -48,7 +48,6 @@
             transition: all 1s ease-in-out;
             &:hover{
                 color: $secondary-color;
-                transform: translateX(50px)
             }
             @include md{
                 font-size: 1.5rem;

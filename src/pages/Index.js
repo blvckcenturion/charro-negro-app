@@ -10,7 +10,7 @@ import { use100vh } from 'react-div-100vh'
 
 const Index = () => {
     const { t, i18n } = useTranslation()
-    const { width, height } = useWindowSize()
+
     useEffect(() => {
         const tl = gsap.timeline()
 
@@ -18,7 +18,7 @@ const Index = () => {
         tl
             .to('body', { backgroundColor: '#EFBA1A' })
             .fromTo('.text-overlay h1', { opacity: 0, y: -100, skewX: 50 }, { opacity: 1, y: 0, duration: 1.5, skewX: 0, ease: 'power2.out' })
-            .to('body', { backgroundColor: '#F53B21', duration: 1, ease: 'power2.out' })
+            .to('body', { backgroundColor: '#FA8812', duration: 1, ease: 'power2.out' })
             .to('.text-overlay h1', { opacity: 0, y: 100, duration: 1, ease: 'power2.out' })
             .to('.text-overlay', {display: 'none', duration: 0})
             .fromTo('.logo-wrapper', { opacity: 0, scale: 0, y: -100 }, { opacity: 1, scale: 1, y: 0, duration: 1, ease: 'power2.out' })
