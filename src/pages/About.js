@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import gsap from 'gsap'
+import Footer from '../components/Footer'
 const About = () => {
 
     useEffect(() => {
@@ -10,7 +11,9 @@ const About = () => {
 
     return (
         <div>
-            <Header/>
+            <Header />
+            <div className="content"></div>
+            <Footer/>
         </div>
     )
 }

@@ -1,0 +1,11 @@
+footer{
+    border-top: 1px solid $primary-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    @include md{
+        flex-direction: row;
+    }
+}
