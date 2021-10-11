@@ -12,5 +12,20 @@ export const SOCIALS = [
 ]
 
 export const LINKS = [
-    '/', '/about', '/menu', '/articles'
+    {
+        path: '/',
+        trans: 'index.home'
+    },
+    {
+        path: '/about',
+        trans: 'index.about'
+    },
+    {
+        path: '/menu',
+        trans: 'index.menu'
+    },
+    {
+        path: '/articles',
+        trans: 'index.articles'
+    }
 ]

@@ -14,18 +14,22 @@ i18n
             en: {
                 translation: {
                     "index": {
+                        "home": "Home",
                         "about": "About Us",
                         "articles": "Featured Articles",
                         "order": "Order Now",
+                        "menu": "menu"
                     }
                 }
             },
             es: {
                 translation: {
                     "index": {
+                        "home": "Inicio",
                         "about": "Sobre Nosotros",
                         "articles": "Articulos Relacionados",
                         "order": "Pedir Ahora",
+                        "menu":"menu"
                     }
                 }
             }
