@@ -23,7 +23,7 @@ footer{
         }
     }
     .socials{
-        width: 15%;
+        width: 90%;
         
         .social-anchor{
             font-size: 2rem;
@@ -34,11 +34,18 @@ footer{
                 transform: scale(1.1);
             }
         }
+        @include md{
+            width: 20%;
+        }
+        @include lg{
+            width: 15%;
+        }
     }
     .location{
         margin-top: 20px;
-        width: 65%;
+        width: 90%;
         flex-direction: column;
+
         p{
             margin: 0.5em 0;
         }
@@ -46,10 +53,18 @@ footer{
             font-family: $primary-font;
             font-size: 1em;
             margin: 1em 0;
+            font-weight: 400;
+        }
+        @include md{
+            width: 55%;
+        }
+        @include lg{
+            width: 65%;
         }
     }
     .order{
-        width: 80%;
+        width: 90%;
+
         button{
             border: none;
             width: 80%;
