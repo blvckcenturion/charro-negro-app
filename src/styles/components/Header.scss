@@ -3,18 +3,17 @@
     grid-template-columns: 15% 70% 15%;
     width: 100vw;
     height: 100px;
-    max-height: 15vh;
+    max-height: 12vh;
     grid-template-areas: "a b c";
     border-bottom: 1px solid $primary-color;
     z-index: 10;
     position: fixed;
     top: 0;
-    opacity: 0;
     &-logo{
         grid-area: b;
         justify-self: center;
         align-self: center;
-        opacity: 0;
+
         img{
             width: 200px;
             @include md{
@@ -26,13 +25,12 @@
         grid-area: c;
         justify-self: end;
         align-self: center;
-        opacity: 0;
         @include md{
             justify-self: center;
         }
     }
     &-nav{
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         background-color: $yellow-color;
