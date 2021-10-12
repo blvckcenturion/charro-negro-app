@@ -11,3 +11,7 @@
 
 @import './components/Header.scss';
 @import './components/Footer.scss';
+
+body{
+    font-family: $secondary-font;
+}

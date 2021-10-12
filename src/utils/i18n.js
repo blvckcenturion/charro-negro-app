@@ -28,7 +28,7 @@ i18n
                         "home": "Inicio",
                         "about": "Sobre Nosotros",
                         "articles": "Articulos Relacionados",
-                        "order": "Pedir Ahora",
+                        "order": "Ordenar Ahora",
                         "menu":"menu"
                     }
                 }

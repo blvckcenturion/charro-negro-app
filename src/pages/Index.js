@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { SOCIALS } from '../utils/data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
-import {useWindowSize} from '../utils/useWindowSize'
 import gsap from 'gsap'
 import { use100vh } from 'react-div-100vh'
 
@@ -23,7 +22,7 @@ const Index = () => {
             .to('.text-overlay', {display: 'none', duration: 0})
             .fromTo('.logo-wrapper', { opacity: 0, scale: 0, y: -100 }, { opacity: 1, scale: 1, y: 0, duration: 1, ease: 'power2.out' })
             .fromTo('.links-wrapper', {opacity: 0, y: -100, height:"1px"}, {opacity: 1, y: 0, height:"45%",duration: 1, ease: 'power2.out'})
-            .fromTo('.links-wrapper a', { opacity: 0, x: -100, skewY: 30 }, { opacity: 1, x: 0, skewY: 0, stagger: 0.5, duration: .5, delay: 0, ease: 'power2.out' })
+            .fromTo('.links-wrapper a', { opacity: 0, x: -100, skewY: 30 }, { opacity: 1, x: 0, skewY: 0, stagger: 0.3, duration: .3, delay: 0, ease: 'power2.out' })
             .fromTo('.socials-wrapper', { opacity: 0, x: -100, skewX: 30 }, { opacity: 1, x: 0, skewX: 0, stagger: 0.5, duration: 1, ease: 'power2.out' })
             .fromTo('.language-wrapper', { opacity: 0, y: 200 }, {opacity: 1, y:0, ease: 'power2.out'})
     }, [])

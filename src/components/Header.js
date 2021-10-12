@@ -78,6 +78,8 @@ const Header = () => {
                             {LINKS.map((link, i) => {
                                 if (link.path !== history.location.pathname) {
                                     return <li key={i}><span onClick={ () => pushToOtherPage(link.path)}>{ t(link.trans)}</span></li>
+                                } else {
+                                    return <></>
                                 }
                             })}
                             <li><a href="https://www.grubhub.com/restaurant/charro-negro-665-sebastopol-rd-santa-rosa/2576507">{ t("index.order")}</a></li>
