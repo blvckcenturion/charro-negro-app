@@ -19,7 +19,7 @@ const Header = ({bgColor}) => {
         const tl = gsap.timeline();
         tl
             .to('.header', {backgroundColor: bgColor, duration: 0})
-            .fromTo('.header', {y:-200},{ y:0, duration:1})
+            .fromTo('.header', { y: -200 }, { y: 0, duration: 1 })
             .fromTo(['.header-logo', '.header-toggler'], { opacity: 0, y: -100 }, { duration: 1, opacity: 1, y: 0, stagger:0.5 })
     }, [bgColor])
 
@@ -29,6 +29,7 @@ const Header = ({bgColor}) => {
         if (isActive === true) {
             tl
                 .to('body', { overflow: 'hidden', duration: 0 })
+                .to('.header-nav', {zIndex: 9, duration: 0})
                 .to('.header-nav', { display: 'block', duration: 0 })
                 .add('start')
                 .to('.header', { backgroundColor: 'transparent', duration: 0, delay:0 }, 'start')

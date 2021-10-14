@@ -19,7 +19,7 @@ const Footer = () => {
                 <h6>CHARRO NEGRO FOOD @{ new Date().getFullYear()}</h6>
             </div>
             <div className="order">
-                <button>
+                <button onClick={() => window.open("https://www.grubhub.com/restaurant/charro-negro-665-sebastopol-rd-santa-rosa/2576507")}>
                     {t('index.order')}
                 </button>
             </div>

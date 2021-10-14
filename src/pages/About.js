@@ -4,16 +4,21 @@ import gsap from 'gsap'
 import Footer from '../components/Footer'
 import Title from '../components/Title'
 import about from '../assets/imgs/about.jpeg'
-
+import ScrollToTop from '../utils/scrollToTop'
 const About = () => {
 
     useEffect(() => {
-        const tl = gsap.timeline()
-        tl.to('body', { duration: 1, ease: 'power3.out', backgroundColor: '#80C2AF' })
+        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+        tl.add('body')
+            .to('body', { duration: 1, backgroundColor: '#80C2AF' }, 'body')
+            .to('body', { duration: 0, overflow: 'hidden' }, 'body')
+            .to('.about-page-wrapper', { duration: 1, opacity: 1, delay: 1.5 })
+            .to('body', { duration: 0, overflow: 'initial' })
     }, [])
 
     return (
         <div>
+            <ScrollToTop/>
             <Header bgColor={"#80C2AF"}/>
             <div className="content">
                 <Title>About Us</Title>
@@ -57,7 +62,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="card-image">
-                            <img src={about} alt="Charro Negro food truck and" />
+                            <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1592.741065997349!2d-122.73055257647611!3d38.430448444277964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808437f9c2b2a735%3A0x3640ba696aabbc42!2s665%20Sebastopol%20Rd%2C%20Santa%20Rosa%2C%20CA%2095407%2C%20USA!5e0!3m2!1sen!2sbo!4v1634163445588!5m2!1sen!2sbo" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>

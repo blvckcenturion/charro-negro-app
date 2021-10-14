@@ -16,6 +16,15 @@ body{
     font-family: $secondary-font;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
 .content{
     min-height: 80vh;
     width: 100%;
@@ -33,7 +42,8 @@ body{
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid $secondary-color;
-    
+    overflow: hidden;
+    z-index: 1;
     h1{
         font-family: $primary-font;
         color: $secondary-color;
@@ -47,12 +57,13 @@ body{
 }
 
 h2{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: $primary-font;
     @include md{
         font-size: 2rem;
     }
 }
+
 
 p{
     font-size: 1rem;

@@ -36,7 +36,7 @@ const Index = () => {
                 <Link to="/about">{ t("index.about")}</Link>
                 <Link to="/menu">Menu</Link>
                 <Link to="/articles">{ t("index.articles")}</Link>
-                <a href="https://www.grubhub.com/restaurant/charro-negro-665-sebastopol-rd-santa-rosa/2576507">{ t("index.order")}</a>
+                <a href="https://www.grubhub.com/restaurant/charro-negro-665-sebastopol-rd-santa-rosa/2576507" target="_blank" rel="noreferrer">{ t("index.order")}</a>
             </div>
             <div className="socials-wrapper">
                 {SOCIALS.map(({href, icon},i) => <a className="social-anchor" key={i} href={href} target="_blank" rel="noopener noreferrer">
