@@ -18,14 +18,14 @@ i18n
                         "about": "About Us",
                         "articles": "Featured Articles",
                         "order": "Order Now",
-                        "menu": "Menu"
+                        "menu": "Our Menu"
                     },
                     "about": {
                         "title1": "Who we are.",
                         "desc1": "We deliver Beach and Barrio food to the city of Santa Rosa.",
                         "desc2": "Every dish we serve connects the Roseland neighborhood to the Pacific Ocean.",
                         "desc3": "Inspired by Mexican style “mariscos” our food truck is filled with colorful, earthy and high tide flavors.",
-                        "desc4": "The driver of this urban sea monster is owner Luis Arce Catacora, the former chef of Willi’s Seafood in Healdsburg, California.",
+                        "desc4": "The driver of this urban sea monster is owner Rodrigo Mendoza, the former chef of Willi’s Seafood in Healdsburg, California.",
                         "title2": "Come visit us.",
                         "hours": {
                             "title": "Working Hours",
@@ -49,14 +49,14 @@ i18n
                         "about": "Sobre Nosotros",
                         "articles": "Articulos Relacionados",
                         "order": "Ordenar Ahora",
-                        "menu":"Menu"
+                        "menu":"Nuestro Menu"
                     },
                     "about": {
-                        "title": "Quienes Somos.",
+                        "title1": "Quienes Somos.",
                         "desc1": "Distribuimos comida de Playa y Barrio a la ciudad de Santa Rosa",
                         "desc2": "Cada plato que servimos conecta el vecindario de Roseland con el Océano Pacífico.",
                         "desc3": "Inspirado en los mariscos al estilo mexicano, nuestro camión de comida está lleno de sabores coloridos, terrosos y de marea alta.",
-                        "desc4": "El conductor de este monstruo marino urbano es el propietario Luis Arce Catacora, ex chef de Willi’s Seafood en Healdsburg, California.",
+                        "desc4": "El conductor de este monstruo marino urbano es el propietario Rodrigo Mendoza, ex chef de Willi’s Seafood en Healdsburg, California.",
                         "title2": "Ven a Visitarnos.",
                         "hours": {
                             "title": "Horario de Atencion",

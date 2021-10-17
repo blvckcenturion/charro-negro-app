@@ -14,13 +14,13 @@ const Footer = () => {
             </div>
             <div className="location">
                 <p>665 Sebastopol Road, Santa Rosa, CA, 95407</p>
-                <p>Wednesday - Sunday, 12-9 PM</p>
+                <p>{ t("about.hours.desc")}</p>
                 <p>+1 (707) 385 6465</p>
                 <h6>CHARRO NEGRO FOOD @{ new Date().getFullYear()}</h6>
             </div>
             <div className="order">
                 <button onClick={() => window.open("https://www.grubhub.com/restaurant/charro-negro-665-sebastopol-rd-santa-rosa/2576507")}>
-                    {t('index.order')}
+                    {t("index.order")}
                 </button>
             </div>
         </footer>

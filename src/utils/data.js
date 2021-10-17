@@ -29,3 +29,9 @@ export const LINKS = [
         trans: 'index.articles'
     }
 ]
+
+
+
+export const MENU = [
+    {}
+]

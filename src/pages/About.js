@@ -1,63 +1,49 @@
-import React, { useEffect } from 'react'
-import Header from '../components/Header'
-import gsap from 'gsap'
-import Footer from '../components/Footer'
-import Title from '../components/Title'
 import about from '../assets/imgs/about.jpeg'
-import ScrollToTop from '../utils/scrollToTop'
+import BasicLayout from '../components/BasicLayout'
+import { useTranslation } from 'react-i18next'
+
 const About = () => {
 
-    useEffect(() => {
-        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
-        tl.add('body')
-            .to('body', { duration: 1, backgroundColor: '#80C2AF' }, 'body')
-            .to('body', { duration: 0, overflow: 'hidden' }, 'body')
-            .to('.about-page-wrapper', { duration: 1, opacity: 1, delay: 1.5 })
-            .to('body', { duration: 0, overflow: 'initial' })
-    }, [])
-
+    const { t } = useTranslation()
+    
     return (
-        <div>
-            <ScrollToTop/>
-            <Header bgColor={"#80C2AF"}/>
-            <div className="content">
-                <Title>About Us</Title>
+        <BasicLayout bgColor={"#80C2AF"} wrapperClass=".about-page-wrapper" pageTitle={t("index.about")}>
                 <div className="about-page-wrapper">
                     <div className="card">
                         <div className="card-content">
                             <div className="card-content-title">
-                                <h2>Who we are.</h2>
+                                <h2>{t("about.title1")}</h2>
                             </div>
                             <div className="card-content-section">
                                 <p>
-                                    We deliver Beach and Barrio food to the city of Santa Rosa. <br /><br />
-                                    Every dish we serve connects the Roseland neighborhood to the Pacific Ocean. <br /><br />
-                                    Inspired by Mexican style “mariscos” our food truck is filled with colorful, earthy and high tide flavors. <br/><br />
-                                    The driver of this urban sea monster is owner Luis Arce Catacora, the former chef of Willi’s Seafood in Healdsburg, California.
+                                    {t("about.desc1")}<br /><br />
+                                    {t("about.desc2")}<br /><br />
+                                    {t("about.desc3")}<br/><br />
+                                    {t("about.desc4")}
                                 </p>
                             </div>
                         </div>
                         <div className="card-image">
-                            <img src={about} alt="Charro Negro food truck and" />
+                            <img src={about} alt="Charro Negro food truck" />
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-content">
                             <div className="card-content-title">
-                                <h2>Come visit us.</h2>
+                                <h2>{t("about.title2")}</h2>
                             </div>
                             <div className="card-content-section">
                                 <div>
-                                    <h3>Working Hours</h3>
-                                    <p>OPEN WEDNESDAY-SUNDAY, 12-9 PM</p>
+                                    <h3>{t("about.hours.title")}</h3>
+                                    <p>{t("about.hours.desc")}</p>
                                 </div>
                                 <div>
-                                    <h3>Location</h3>
-                                    <p>665 SEBASTOPOL ROAD, SANTA ROSA, CA, 95407</p>
+                                    <h3>{t("about.address.title")}</h3>
+                                    <p>{t("about.address.desc")}</p>
                                 </div>
                                 <div>
-                                    <h3>Pick Ups</h3>
-                                    <p>+1 (707) 385-6465</p>
+                                    <h3>{t("about.pickUp.title")}</h3>
+                                    <p>{t("about.pickUp.desc")}</p>
                                 </div>
                             </div>
                         </div>
@@ -66,9 +52,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Footer/>
-        </div>
+        </BasicLayout>
     )
 }
 
