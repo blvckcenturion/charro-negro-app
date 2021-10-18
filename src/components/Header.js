@@ -25,8 +25,10 @@ const Header = ({bgColor}) => {
 
 
     useEffect(() => {
+        
         const tl = gsap.timeline()
         if (isActive === true) {
+            document.querySelector("meta[name='theme-color']").setAttribute('content', '#EFBA1A')
             tl
                 .to('body', { overflow: 'hidden', duration: 0 })
                 .to('.header-nav', {zIndex: 9, duration: 0})
@@ -34,16 +36,19 @@ const Header = ({bgColor}) => {
                 .add('start')
                 .to('.header', { backgroundColor: 'transparent', duration: 0, delay:0 }, 'start')
                 .to('.header-nav', { opacity: 1, duration: 1, ease: 'power2.out' }, 'start')
-                .to('body', {backgroundColor: '#EFBA1A', duration:0})
+                .to('body', { backgroundColor: '#EFBA1A', duration: 0 })
+                
                 .fromTo('.header-nav-links ul li', { opacity: 0, skewY: 10 }, { opacity: 1, skewY: 0, stagger: 0.2, duration: 1, ease: 'power2.out' })
                 .fromTo('.header-nav-socials', {opacity: 0, skewX:10, y: 100}, {opacity: 1, skewX:0, y: 0,  duration: 1, ease: 'power2.out',})
-        } else if(isActive === false) {
+        } else if (isActive === false) {
+            
             tl
                 .to('.header-nav-socials', {opacity: 0, y: 100, duration: 1, ease: 'power2.out'})
                 .to('.header-nav-links ul li', { opacity: 0, y: 10, stagger: 0.2, duration: 1, ease: 'power2.out', delay: -1 })
                 .to('body', { backgroundColor: bgColor, duration: 0 })
                 .add('end')
-                .to('.header-nav', { opacity: 0,  duration: 1, ease: 'power2.out' }, 'end')
+                .then(()=> document.querySelector("meta[name='theme-color']").setAttribute('content', bgColor))
+                tl.to('.header-nav', { opacity: 0,  duration: 1, ease: 'power2.out' }, 'end')
                 .to('.header', { backgroundColor: bgColor, duration: 1,}, 'end')
                 .to('.header-nav', { display: 'none', duration: 0 })
                 .to('body', {overflow: 'visible', duration:0})
