@@ -3,7 +3,6 @@ import Header from '../components/Header'
 import gsap from 'gsap'
 import Footer from '../components/Footer'
 import Title from '../components/Title'
-import about from '../assets/imgs/about.jpeg'
 import ScrollToTop from '../utils/scrollToTop'
 
 const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle }) => {
@@ -14,7 +13,7 @@ const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle }) => {
             .to('body', { duration: 0, overflow: 'hidden' }, 'body')
             .to(wrapperClass, { duration: 1, opacity: 1, delay: 1.5 })
             .to('body', { duration: 0, overflow: 'initial' })
-    }, [wrapperClass])
+    }, [wrapperClass, bgColor])
 
     return (
         <div>

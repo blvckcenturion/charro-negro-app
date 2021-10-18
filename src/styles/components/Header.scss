@@ -2,14 +2,16 @@
     display:grid;
     grid-template-columns: 15% 70% 15%;
     width: 100vw;
-    height: 100px;
-    max-height: 12vh;
+    height: 70px;
     grid-template-areas: "a b c";
     border-bottom: 1px solid $primary-color;
     z-index: 10;
     position: fixed;
     top: 0;
     z-index: 10;
+    @include lg{
+        height: 100px;
+    }
     &-logo{
         grid-area: b;
         justify-self: center;

@@ -1,10 +1,15 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+import BasicLayout from '../components/BasicLayout'
 
 const Articles = () => {
+    const { t } = useTranslation();
     return (
-        <div>
+        <BasicLayout bgColor={"#499DFF"} wrapperClass="articles-page-wrapper" pageTitle={t("index.articles")}>
+            <div className="articles-page-wrapper">
             
-        </div>
+            </div>
+        </BasicLayout>
     )
 }
 
