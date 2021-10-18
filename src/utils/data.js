@@ -1,4 +1,11 @@
 import { faFacebookF, faInstagram,  } from "@fortawesome/free-brands-svg-icons";
+import aguachile from '../assets/imgs/aguachile.jpeg'
+import taco from '../assets/imgs/taco.jpeg'
+import cocktail from '../assets/imgs/cocktail.jpeg'
+import calamari from '../assets/imgs/calamari.jpeg'
+import ceviche from '../assets/imgs/ceviche.jpeg'
+import tostada from '../assets/imgs/tostada.jpeg'
+import fajita from '../assets/imgs/fajita.jpeg'
 
 export const SOCIALS = [
     {
@@ -38,6 +45,7 @@ export const MENU = [
         headings: ["menu.medium", "menu.large"],
         translateTitle: false,
         translateElements: false,
+        img: aguachile,
         items: [
             {
                 name: "Agua Chile Verde",
@@ -62,6 +70,7 @@ export const MENU = [
         headings: ["menu.medium", "menu.large"],
         translateTitle: false,
         translateElements: true,
+        img: ceviche,
         items: [
             {
                 name: "menu.ceviches.c1",
@@ -82,6 +91,7 @@ export const MENU = [
         headings: ["menu.medium", "menu.large"],
         translateTitle: true,
         translateElements: true,
+        img: cocktail,
         items: [
             {
                 name: "menu.cocktails.c1",
@@ -106,6 +116,7 @@ export const MENU = [
         headings: [" "],
         translateTitle: false,
         translateElements: true,
+        img: taco,
         items: [
             {
                 name: "menu.tacos.t1",
@@ -142,6 +153,7 @@ export const MENU = [
         headings: [" "],
         translateTitle: true,
         translateElements: true,
+        img: calamari,
         items: [
             {
                 name: "menu.specials.s1",
@@ -166,6 +178,7 @@ export const MENU = [
         headings: [" "],
         translateTitle: true,
         translateElements: true,
+        img: fajita,
         items: [
             {
                 name: "menu.fajita.f1",
@@ -186,6 +199,7 @@ export const MENU = [
         headings: [" "],
         translateTitle: false,
         translateElements: true,
+        img: tostada,
         items: [
             {
                 name: "menu.tostada.t1",

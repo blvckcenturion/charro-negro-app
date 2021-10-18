@@ -8,7 +8,6 @@ const Menu = () => {
         <BasicLayout bgColor={"#8657E9"} wrapperClass=".menu-page-wrapper" pageTitle={t("index.menu")}>
             <div className="menu-page-wrapper">
                 {MENU.map((menuItem, i) => <MenuSection key={i} menuItem={menuItem}/>)}
-                
             </div>
         </BasicLayout>
     )
@@ -18,13 +17,14 @@ export default Menu
 
 
 const MenuSection = ({ menuItem }) => {
-    const { title, headings, translateTitle,translateElements, items} = menuItem;
+    const { title, headings, translateTitle,translateElements, items, img} = menuItem;
     const {t} = useTranslation();
     return (
         <div className="menu-section">
             <div className="menu-section__content">
                 <div className="menu-section__content-title">
                     <h2>{translateTitle ? t(title) : title}</h2>
+                    <img src={ img } alt={`${title}`} />
                 </div>
                 <div className="menu-section__content-elements">
                     <div className={`heading ${headings.length > 1 ? "double-col" : ""}`}>

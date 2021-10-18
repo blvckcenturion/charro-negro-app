@@ -21,7 +21,6 @@
         }
         &__content{
             width: 95%;
-
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -43,11 +42,24 @@
                 border-bottom: 1px solid $secondary-color;
                 h2{
                     font-size: 1.5rem;
+                    border-bottom: 1px solid $secondary-color;
+                    margin: 0;
+                    padding: 1.4rem 0;
                     @include md{
                         font-size: 1.8rem;
                     }
                     @include lg{
                         font-size: 2.2rem;
+                    }
+                }
+                img{
+                    padding: 30px 0;
+                    height: 40vh;
+                    width: 70%;
+                    object-fit: cover;
+                    @include md{
+                        width: 50%;
+                        height: 50vh;
                     }
                 }
             }

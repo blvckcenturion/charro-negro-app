@@ -11,7 +11,7 @@ const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle }) => {
         tl.add('body')
             .to('body', { duration: 1, backgroundColor: bgColor }, 'body')
             .to('body', { duration: 0, overflow: 'hidden' }, 'body')
-            .to(wrapperClass, { duration: 1, opacity: 1, delay: 1.5 })
+            .to(wrapperClass, { duration: 2, opacity: 1, delay: 1.5 })
             .to('body', { duration: 0, overflow: 'initial' })
     }, [wrapperClass, bgColor])
 
