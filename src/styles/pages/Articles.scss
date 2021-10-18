@@ -10,8 +10,8 @@
         gap: 40px 4%;
     }
     @include xl{
-        grid-template-columns: repeat(3, 32%);
-        gap: 40px 2%;
+        grid-template-columns: repeat(3, 31%);
+        gap: 40px 3.5%;
     }
     margin: 80px 0;
     box-sizing: content-box;

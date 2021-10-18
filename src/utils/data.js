@@ -202,3 +202,64 @@ export const MENU = [
         ]
     },
 ]
+
+
+export const ARTICLES = [
+    {
+        title: "articles.a1",
+        date: "10.24.2021",
+        publisher: "KTVU FOX 2",
+        img: "https://www.sonomamag.com/wp-content/uploads/2020/07/cc0715_CharroNegro_CevicheAugachile-1024x683.jpg",
+        link: "https://www.ktvu.com/news/latino-communitys-food-trucks-part-of-santa-rosa-neighborhood-revitalization"
+    },
+    {
+        title: "articles.a2",
+        date: "09.2021",
+        publisher: "Sonoma Magazine",
+        img: "https://www.sonomamag.com/wp-content/uploads/2021/09/charro-negro-1024x683.jpg",
+        link: "https://www.sonomamag.com/new-mexican-food-park-is-taking-shape-in-santa-rosa"
+    },
+    {
+        title: "articles.a5",
+        date: "09.10.2021",
+        publisher: "La Prensa Sonoma",
+        img: "https://imengine.prod.srp.navigacloud.com/?uuid=64306663-3036-406c-b073-2d3336353633&type=primary&q=72&width=1023",
+        link: "https://www.laprensasonoma.com/articulo/comunidad-lps/celebraran-la-creacion-de-el-mitote-en-roseland/"
+    },
+    {
+        title: "articles.a3",
+        date: "08.19.2021",
+        publisher: "Sonoma County",
+        img: "https://www.sonomacounty.com/sites/default/files/styles/editorial_hero_xl/public/2021-02/dining_charro_negro_mitote_park_sonoma_county_004_1920x968.jpg?itok=iZ12uVPT",
+        link: "https://www.sonomacounty.com/blog/12-new-food-trucks-sonoma-county"
+    },
+    {
+        title: "articles.a8",
+        date: "07.20.2021",
+        publisher: "Sonoma Magazine",
+        img: "https://www.sonomamag.com/wp-content/uploads/2020/07/cc0715_CharroNegro_Truck-1024x694.jpg",
+        link: "https://www.sonomamag.com/new-mexican-food-trucks-to-check-out-in-sonoma-county/?gSlide=2"
+    },
+    {
+        title: "articles.a4",
+        date: "01.29.2021",
+        publisher: "Sonoma Magazine",
+        img: "https://www.sonomamag.com/wp-content/uploads/2020/07/cc0715_CharroNegro_Augachile-1024x680.jpg",
+        link: "https://www.sonomamag.com/food-trucks-in-sonoma-county-to-check-out-right-now"
+    },
+    {
+        title: "articles.a6",
+        date: "12.18.2020",
+        publisher: "Sonoma Magazine",
+        img: "https://www.sonomamag.com/wp-content/uploads/2020/07/cc0715_CharroNegro_TacoVariety-1024x686.jpg",
+        link: "https://www.sonomamag.com/sonoma-countys-best-restaurant-dishes-2020/?gSlide=19"
+    },
+    {
+        title: "articles.a7",
+        date: "12.06.2020",
+        publisher: "Argus Courier",
+        img: "https://imengine.prod.srp.navigacloud.com/?uuid=5fbf3b31-a40b-57a8-bd58-604bba071a91&type=primary&q=72&width=1024",
+        link: "https://www.petaluma360.com/article/entertainment/biggest-2020-sonoma-county-restaurant-openings-and-closings/",
+    }
+]
+

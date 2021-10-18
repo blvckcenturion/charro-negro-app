@@ -85,7 +85,16 @@ i18n
                         }   
                     },
                     "articles": {
-                        "btn": "Read Article"
+                        "btn": "Read Article.",
+                        "a1": "Latino community's food trucks part of Santa Rosa neighborhood revitalization.",
+                        "a2": "New Mexican Food Park Is Taking Shape in Santa Rosa.",
+                        "a3": "New Sebastopol Food Hall Taking Shape.",
+                        "a4": "12 New Food Trucks to Check Out Right Now in Sonoma County.",
+                        "a5": "Celebration for the creation of El Mitote in Roseland.",
+                        "a6": "Sonoma County’s Best Restaurant Dishes 2020.",
+                        "a7": "Biggest 2020 Sonoma County Restaurant Openings and Closings.",
+                        "a8": "Check Out These Up-And-Coming Taco Trucks in Sonoma County.",
+
                     }
                 }
             },
@@ -163,7 +172,15 @@ i18n
                         }
                     },
                     "articles": {
-                        "btn": "Leer Articulo"
+                        "btn": "Leer Articulo.",
+                        "a1": "Los camiones de comida de la comunidad latina son parte de la revitalización de Santa Rosa.",
+                        "a2": "Nuevo parque de comida mexicana toma forma en Santa Rosa.",
+                        "a3": "Toma forma la nueva sala de alimentación de Sebastopol.",
+                        "a4": "12 nuevos camiones de comida para visitar ahora mismo en el condado de Sonoma.",
+                        "a5": "Celebrarán la creación de El Mitote en Roseland.",
+                        "a6": "Los mejores platos de restaurante del condado de Sonoma 2020.",
+                        "a7": "Las mayores aperturas y cierres de restaurantes del condado de Sonoma en 2020.",
+                        "a8": "Echa un vistazo a estos nuevos camiones de tacos en el condado de Sonoma.",
                     }
                 }
             }
