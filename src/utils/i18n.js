@@ -36,7 +36,7 @@ i18n
                             "desc": "Sebastopol Road, Santa Rosa, CA, 95407"
                         },
                         "pickUp": {
-                            "title": "PickUps",
+                            "title": "Pickups or Catering",
                             "desc": "+1 (707) 385-6465"
                         }
                     },
@@ -123,7 +123,7 @@ i18n
                             "desc": "Sebastopol Road, Santa Rosa, CA, 95407"
                         },
                         "pickUp": {
-                            "title": "Recogidas",
+                            "title": "Recogidas o Catering",
                             "desc": "+1 (707) 385-6465"
                         }
                     },

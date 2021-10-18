@@ -57,7 +57,12 @@
                     height: 40vh;
                     width: 70%;
                     object-fit: cover;
+                    transition: all 0.3s ease;
                     @include md{
+                        width: 70%;
+                        height: 50vh;
+                    }
+                    @include lg{
                         width: 50%;
                         height: 50vh;
                     }

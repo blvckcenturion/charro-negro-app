@@ -8,6 +8,7 @@ const About = () => {
     
     return (
         <BasicLayout bgColor={"#80C2AF"} wrapperClass=".about-page-wrapper" pageTitle={t("index.about")}>
+                
                 <div className="about-page-wrapper">
                     <div className="card">
                         <div className="card-content">

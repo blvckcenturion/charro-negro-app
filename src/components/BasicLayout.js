@@ -4,8 +4,8 @@ import gsap from 'gsap'
 import Footer from '../components/Footer'
 import Title from '../components/Title'
 import ScrollToTop from '../utils/scrollToTop'
-
-const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle }) => {
+import Head from '../components/head'
+const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle, pageDesc }) => {
     useEffect(() => {
         const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
         tl.add('body')
@@ -17,6 +17,7 @@ const BasicLayout = ({ children, bgColor, wrapperClass, pageTitle }) => {
 
     return (
         <div>
+            <Head title={pageTitle} bgColor={ bgColor}/>
             <ScrollToTop />
             <Header bgColor={bgColor} />
             <div className="content">
