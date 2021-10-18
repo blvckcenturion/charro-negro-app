@@ -82,8 +82,10 @@ i18n
                             "t1": "Shrimp Tostada",
                             "t2": "Octopus Tostada",
                             "t3": "Mixed Tostada",
-                        }
-                        
+                        }   
+                    },
+                    "articles": {
+                        "btn": "Read Article"
                     }
                 }
             },
@@ -159,6 +161,9 @@ i18n
                             "t2": "Tostada de Pulpo",
                             "t3": "Tostada Mixta",
                         }
+                    },
+                    "articles": {
+                        "btn": "Leer Articulo"
                     }
                 }
             }
