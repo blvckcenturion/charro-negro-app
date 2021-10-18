@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { use100vh } from 'react-div-100vh'
+import Head from '../components/head'
 
 const Index = () => {
     const { t, i18n } = useTranslation()
@@ -28,7 +29,8 @@ const Index = () => {
     }, [])
 
     return (
-        <div className="index-wrapper" style={{height: use100vh()}}>
+        <div className="index-wrapper" style={{ height: use100vh() }}>
+            <Head title={"Charro Negro Food Truck"}/>
             <div className="logo-wrapper">
                 <Logo/>
             </div>
